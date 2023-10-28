@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Excalidraw Clone</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  </head>
+  <body>
+    <div id="root">
+      <div id="top">
+        <button class="material-icons menu btn" onclick="toggleMenu()">
+          menu
+        </button>
+        <div class="options" id="actionbuttons">
+          <button
+            class="btn material-icons"
+            id="freehand"
+            onclick="onActionClick(this)"
+          >
+            edit
+          </button>
+          <button
+            id="circle"
+            class="btn material-symbols-outlined"
+            onclick="onActionClick(this)"
+          >
+            brightness_1
+          </button>
+          <button
+            id="rectangle"
+            class="btn material-symbols-outlined"
+            onclick="onActionClick(this)"
+          >
+            check_box_outline_blank
+          </button>
+          <button
+            onclick="onActionClick(this)"
+            class="btn material-symbols-outlined"
+            id="line"
+          >
+            pen_size_2
+          </button>
+          <button
+            id="eraser"
+            class="btn material-symbols-outlined"
+            onclick="onActionClick(this)"
+          >
+            ink_eraser
+          </button>
+        </div>
+        <div></div>
+      </div>
+      <canvas id="canvas"></canvas>
+      <div id="bottom">
+        <div class="options">
+          <button class="btn material-icons" id="undo">undo</button>
+          <button class="btn material-icons" id="redo">redo</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="form hide">
+      <label for="strokewidth">Stroke Width</label>
+      <input
+        type="range"
+        id="strokewidth"
+        name="strokewidth"
+        min="3"
+        max="10"
+        oninput="onInput(this)"
+      />
+      <label for="strokestyle">Stroke Color</label>
+      <input
+        type="color"
+        name="strokestyle"
+        id="strokestyle"
+        oninput="onInput(this)"
+      />
+    </div>
+
+     <script src="./index.js"></script>
+    <script src="freehand.js"></script>
+    <script src="undoredo.js"></script>
+    <script src="state.js"></script>
+    <script src="drawing.js"></script>
+  </body>
+  </body>
+</html>
