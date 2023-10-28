@@ -15,7 +15,7 @@
 
 #top {
   position: absolute;
-  width: 100vw;
+  width: 97vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,8 +31,17 @@
   padding: 4px 20px; 
   box-shadow: 2px 2px 6px #E1E1E1;
 }
+#top > .group{ 
+  background-color:white;
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  border-radius: 10px;
+  padding: 4px 20px;
+}
+
 .menu {
-  background-color: #ECECF3;
+  background-color: white;
   border-radius: 4px;
 }
 .btn {

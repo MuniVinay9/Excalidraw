@@ -15,18 +15,25 @@
         </button>
         <div class="options" id="actionbuttons">
           <button
-            class="btn material-icons"
-            id="freehand"
+            class="btn material-symbols-outlined"
+            id="lock"
             onclick="onActionClick(this)"
           >
-            edit
+            lock
           </button>
           <button
-            id="circle"
             class="btn material-symbols-outlined"
+            id="pantool"
             onclick="onActionClick(this)"
           >
-            brightness_1
+            pan_tool
+          </button>
+          <button
+            class="btn material-symbols-outlined"
+            id="arrowselect"
+            onclick="onActionClick(this)"
+          >
+            arrow_selector_tool
           </button>
           <button
             id="rectangle"
@@ -36,11 +43,46 @@
             check_box_outline_blank
           </button>
           <button
+            id="circle"
+            class="btn material-symbols-outlined"
+            onclick="onActionClick(this)"
+          >
+            brightness_1
+          </button>
+          <button
+            class="btn material-symbols-outlined"
+            id="arrowselect"
+            onclick="onActionClick(this)"
+          >
+            line_end_arrow_notch
+          </button>
+          <button
             onclick="onActionClick(this)"
             class="btn material-symbols-outlined"
             id="line"
           >
-            pen_size_2
+            horizontal_rule
+          </button>
+          <button
+            class="btn material-symbols-outlined"
+            id="freehand"
+            onclick="onActionClick(this)"
+          >
+            edit
+          </button>
+          <button
+            class="btn material-icons"
+            id="text"
+            onclick="onActionClick(this)"
+          >
+            text_format
+          </button>
+          <button
+            id="image"
+            class="btn material-symbols-outlined"
+            onclick="onActionClick(this)"
+          >
+            broken_image
           </button>
           <button
             id="eraser"
@@ -49,8 +91,30 @@
           >
             ink_eraser
           </button>
+          <button
+            id="category"
+            class="btn material-symbols-outlined"
+            onclick="onActionClick(this)"
+          >
+            category
+          </button>
         </div>
-        <div></div>
+        <div class="topright">
+          <button
+          id="groups"
+          class="btn material-symbols-outlined"
+          onclick="onActionClick(this)"
+          >
+          group
+          </button>
+          <button
+          id="library"
+          class="btn material-symbols-outlined"
+          onclick="onActionClick(this)"
+          >
+          local_library
+          </button>
+        </div>
       </div>
       <canvas id="canvas"></canvas>
       <div id="bottom">
